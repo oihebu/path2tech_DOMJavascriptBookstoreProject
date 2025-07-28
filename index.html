@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Bookstore Javascript Project</title>
+    <!--stylesheet linked below-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1 class ="page-title">welcome to au lait bookshop  ᡣ𐭩 •｡ ˚⋅</h1>
+    </div>
+
+    <div id="opening-text">
+    <p>here at the <i>au lait bookshop</i> we invite our customers to explore the world of literary fiction to their heart's content. so go ahead, add/remove books to the stock below!</p>
+    </div>
+
+    <div class ="entire-form">
+
+        <div id="book-form-title">
+        <h2>— ⋆˚ add books</h2>
+        </div>
+
+            <form id="create-book">
+                <div class = "title">
+                    <label for ="title" class="label-text">book title:</label><br>
+                    <input type="text" name="title" id="title" placeholder="Enter book title">
+                </div>
+                
+                <div class = "author">
+                    <label for ="author" class="label-text">book author:</label><br>
+                    <input type="text" name="author" id="author" placeholder="Enter book author">
+                </div>
+
+                <div class = "isbn">
+                    <label for ="isbn" class="label-text">book ISBN:</label><br>
+                    <input type="text" name="isbn" id="isbn" placeholder="Enter book ISBN">
+                </div>
+
+
+
+
+
+                <button type="submit" id="submit">add book</button>
+
+            </form>
+
+    </div>
+
+    <section id="books-container">
+
+    <table class="books-container-header">
+        <thead>
+            <tr class ="bookstable-header">
+            <th id="bookstable-titlecolumn" scope="col">Title</th>
+            <th id="bookstable-authorcolumn" scope="col">Author(s)</th>
+            <th id="bookstable-isbncolumn" scope="col">ISBN</th>
+            </tr>
+        </thead>
+       <tbody class="books-table-body">
+           
+        </tbody>
+    </table>
+
+    </section>
+
+    <!--scripts linked below-->
+    <script src="script.js"> </script>
+</body>
+</html>
