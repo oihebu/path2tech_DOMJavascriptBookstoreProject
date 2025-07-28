@@ -22,10 +22,10 @@ async function createBook(event){ // a submit function to create new book
         const data = await response.json(); //need to convert the response to json 
         const newElement = document.createElement ("tr");
         newElement.innerHTML = `
-        <td id="bookstable-titlerow">${data.title}</td>
-        <td id="bookstable-authorrow">${data.author}</td>
-        <td id="bookstable-isbnrow">${data.isbn}</td>
-        <button id="${data.id}"class="delete-book">delete</button>
+        <td id="title-row">${data.title}</td>
+        <td id="author-row">${data.author}</td>
+        <td id="isbn-row">${data.isbn}</td>
+        <td><button id="${data.id}"class="delete-book">delete</button></td>
         `;
         booksContainer.appendChild(newElement);
         event.target.reset();
@@ -70,10 +70,10 @@ async function fetchBooks(){
     for (const item of filteredData) {
         const newElement = document.createElement ("tr");
         newElement.innerHTML = `
-        <td id="bookstable-titlerow">${item.title}</td>
-        <td id="bookstable-authorrow">${item.author}</td>
-        <td id="bookstable-isbnrow">${item.isbn}</td>
-        <button id="${item.id}"class="delete-book">delete</button>
+        <td id="title-row">${item.title}</td>
+        <td id="author-row">${item.author}</td>
+        <td id="isbn-row">${item.isbn}</td>
+        <td id ="delete-row"><button id="${item.id}"class="delete-book">delete</button></td>
         `;
         booksContainer.appendChild(newElement);
 

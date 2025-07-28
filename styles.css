@@ -1,9 +1,7 @@
 body {
     background-color: #ebe6db;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    padding: 10% 22%;
-    margin-left: 10%;
-    margin-right: 10% ;
+    margin: 100px 400px 100px 400px;
 }
 
 h1 {
@@ -93,20 +91,6 @@ p {
 
 }
 
-.books-container-header{
-    background-color: #dcccc0;
-    width:100%;
-    padding: 20px;
-}
-
-.bookstable-header:hover{
-    background-color: #dcccc0;
-
-}
-
-#books-container-header-title-column { 
-
-}
 
 #books-container {
     width: 100%;
@@ -115,42 +99,77 @@ p {
 
 }
 
-.books-table-body{
-    padding: 10px;
-}
-
-th {
+.table-header {
+    background-color:#dcccc0;
+    display: flex;
+    width:95%;
+    padding:2% 0px 2% 5%;
+    
     font-size: 13px;
+    font-weight: bold;
+
 }
 
 td {
     font-size: 12px;
 }
 
+tr{
+    height:70px;
+}
+
 tr:hover {
     background-color:#dfe5f0;
 }
-
-
-#bookstable-titlerow {
+#title-column{
+    width:35%;
+    
+}
+#title-row {
     text-transform: capitalize;
     font-weight:bold;
-    padding: 15px 10px 10px 35px;
     text-wrap: wrap;
+    width:35%;
+    padding-left:5%;
     
 }
 
-#bookstable-authorrow {
+#author-column{
+    width:20%;
+    margin-left:-20px;
+
+    
+}
+
+#author-row {
     text-transform: capitalize;
-    padding: 15px 10px 10px 10px;
     text-wrap: wrap;
+    width:20%;
+    padding:0% 2% 0% 2%;
+    
     
 }
 
-#bookstable-isbnrow {
+#isbn-column{
+    width:30%;
+    margin-left:5px;
+}
+
+#isbn-row {
     text-transform: uppercase;
-    padding: 15px 20px 10px 10px;
+    text-wrap: wrap;
+    width:30%;
     
+}
+
+#delete-column {
+    width:15%;
+    margin-left:15px;
+
+}
+#delete-row {
+    width:15%;
+
 }
 
 .delete-book{
